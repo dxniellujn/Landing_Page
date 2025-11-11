@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>UPC-LP</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+
+  <!--CABEZERA-->
+
+  <header>
+    <!--Menu horizontal-->
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img height="42" width="48" src="Imagen/Logo-landing.jpg" alt="" />
+      </a>
+      <!--Boton Menu Responsive - Open-->
+      <button class="open-menu" aria-label="Abrir-menu">
+        <img src="Imagen/icons-menú.png" alt=""/>
+      </button>
+
+      <ul class="menu-horizontal">
+
+      <!--Boton Menu Responsive - Close-->
+      <button class="close-menu" aria-label="Cerrar-menu">
+        <img src="Imagen/icons-x.png" alt="" width="35"/>
+      </button>
+      
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Información</a></li>
+        <li><a href="">Contactos</a></li>
+      </ul>
+    </nav>
+
+<!--CUERPO-->
+
+  <body>
+    <div class="video-fondo">
+
+      <nav class="video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/XPkKmKAXvJw?si=HrZI2sMn5COXTC7b"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </nav>
+      
+    <div class="Información">
+      <nav class="Info-pag">
+        <h1>Los Mejores Celulares</h1>
+        <h3>Aquí están...</h3>
+        
+          <p>Lleva la tecnología en tu bolsillo con los últimos modelos de alta gama. Rendimiento, estilo y la mejor experiencia en cada toque.</p>
+      </nav>
+
+      <div class="Container_SN">
+        <ul class="Banner_SN">
+          <li>
+            <img src="Imagen/icons8-facebook-48.png" width="32" height="32"><p><a href="https://github.com/dxniellujn" target="_blank">Facebook:<br>dxniellujn</a></p>
+          </li>
+          <li>
+            <img src="Imagen/icons8-instagram-48.png" width="32" height="32"><p><a href="https://github.com/dxniellujn" target="_blank">Instagram:<br>_dxniellujn_</a></p>
+          </li>
+          <li>
+            <img src="Imagen/icons8-x-30.png" width="32" height="32"><p><a href="https://github.com/dxniellujn" target="_blank">Twitter:<br>dxniellujn</a></p>
+          </li>
+          <li>
+            <img src="Imagen/icons8-github-48.png" width="32" height="32"><p><a href="https://github.com/dxniellujn" target="_blank">GitHub:<br>dxniellujn</a></p>
+          </li>
+          <li>
+            <img src="Imagen/icons8-linkedin-48.png" width="32" height="32"><p><a href="https://github.com/dxniellujn" target="_blank">Linkedin:<br>dxniellujn</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+      <div class="container-Formulario">
+        <section class="Inscripcion-Section">
+          <div id="Section-Inscripcion">
+            <div class="Container-Inscripcion">
+              <form name="frm" method="post" action="">
+                <fieldset id="form">
+                  <legend>Formulario de Compra</legend>
+                  <ol>
+                    <li>
+                      <label>Nombres:</label
+                      ><input type="text" name="fname" size="30" />
+                    </li>
+                    <li>
+                      <label>Apellidos:</label
+                      ><input type="text" name="flastname" size="30" />
+                    </li>
+    
+                    <li>
+                      <label>Sexo:</label
+                      ><input type="radio" name="fsex" value="H" />Hombre
+                      <input type="radio" name="fsex" value="F" />Mujer
+                    </li>
+    
+                    <li>
+                      <label>E-Mail:</label
+                      ><input type="text" name="femail" size="30" />
+                    </li>
+                    <li>
+                      <label>Celular:</label
+                      ><input type="text" name="fphone" size="30" />
+                    </li>
+                    <li>
+                      <label>Seleccione su Distrito:</label>
+                      <select>
+                        <option>Los Olivos</option>
+                        <option>San Borja</option>
+                        <option>Rímac</option>
+                        <option>Santa Anita</option>
+                        <option>Surquillo</option>
+                        <option>Magdalena del Mar</option>
+                        <option>San Martin de Porres</option>
+                      </select>
+                    </li>
+                    <li>
+                      <label>Escoge método de entrega:</label>
+    
+                      <input type="checkbox" name="option1" />Tienda
+                      <input type="checkbox" name="option2" />Delivery
+                    </li>
+                    <li>
+                      <label for="message">Mensaje:</label>
+                      <textarea id="message" name="message" rows="5" cols="28" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </li>
+                  </ol>
+                  <p>
+                    <input type="submit" class="btn-form-insc" value="Enviar" />
+                  </p>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+   <!-- Enlaces legales -->
+   <div class="footer-links">
+    <h4>Legal</h4>
+    <a href=""
+      >Política de Privacidad</a
+    >
+    <!-- Dentro de href llama a un documento pdf con la poltica-->
+    <a href="#">Términos y Condiciones</a>
+    <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+    <a href="obtenerDocumento.pdf">Protección de Datos</a>
+  </div>
+
+
+
+  <!-- Redes sociales con íconos personalizados -->
+  <div class="footer-social">
+    <h4>Síguenos</h4>
+    <a href="#"
+      ><img
+        src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+        alt="Facebook"
+        class="social-icon"
+    /></a>
+    <a href="#"
+      ><img
+        src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+        alt="Instagram"
+        class="social-icon"
+    /></a>
+    <a href="#"
+      ><img
+        src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+        alt="LinkedIn"
+        class="social-icon"
+    /></a>
+    <a href="#"
+      ><img
+        src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+        alt="Twitter"
+        class="social-icon"
+    /></a>
+  </div>
+</div>
+</footer>
+</section>
+      
+    </nav>
+  </footer>  
+</html>

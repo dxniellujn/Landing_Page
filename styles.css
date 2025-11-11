@@ -1,0 +1,337 @@
+/* Header */
+
+.topheader {
+  font-family: "Roboto", sans-serif;
+  position: static;
+  background-color: #04162a;
+  width: px;
+  z-index: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+}
+.menu-horizontal li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+/*Menu Hamburguesa*/
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+/* Body*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(233, 228, 222);
+}
+.video-fondo {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  margin-top: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 400px;
+}
+.video iframe {
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.Información {
+  display: flex;
+  margin-top: 100px;
+}
+.Info-pag {
+  text-align: auto;
+  padding: 30px 50px 50px 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* Redes Sociales */
+.Container_SN {
+  padding: 0;
+  margin-right: 10px;
+  position: fixed;
+  right: -100px;
+  top: 210px;
+  width: 180px;
+  z-index: 1100;
+}
+.Banner_SN li {
+  list-style-type: none;
+  opacity: 1;
+  color: blue;
+  height: 43px;
+  padding: 0;
+  margin: 0;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.Banner_SN li:hover {
+  margin-left: -115px;
+}
+.Banner_SN li img {
+  float: left;
+  margin: 5px 6px;
+  margin-right: 5px;
+}
+.Banner_SN li p {
+  padding-top: 5px;
+  margin: 0;
+  line-height: 16px;
+  font-size: 10px;
+}
+.Banner_SN li p a {
+  text-decoration: none;
+  color: rgba(16, 49, 109, 0.452);
+}
+
+/*Formulario*/
+.container-Formulario {
+  background-color: white;
+  height: 800px;
+  width: ;
+}
+.Container-Inscripcion {
+  padding: 10px 500px;
+  padding-bottom: 100px;
+}
+
+form legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(24, 69, 128);
+  margin-bottom: 20px;
+}
+
+form ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+form li {
+  margin-bottom: 15px;
+}
+
+form label {
+  font-weight: bold;
+  display: inline-block;
+  width: 130px;
+}
+
+form input[type="text"],
+form select {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #0b41a3;
+  border-radius: 10px;
+}
+
+form btn-frm-Insc {
+  background-color: chocolate;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+p {
+  text-align: center;
+}
+/*Footer*/
+
+.underfooter {
+  font-family: "Roboto", sans-serif;
+  margin-top: 15px;
+  position: static;
+  background-color: #5f5f5f;
+  width: px;
+  z-index: 100px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.Piepag {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1500px;
+}
+.Piepag p {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+.Piepag a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+/*Configuracion responsive*/
+
+@media (max-width: 768px) {
+  .menu-horizontal {
+    flex-direction: fixed;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    height: 100%;
+    overflow-y: auto;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 999;
+  }
+  .menu-horizontal.menu_opened {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+  .menu-horizontal li {
+    padding: 0;
+  }
+  .menu-horizontal a {
+    color: black;
+    font-size: 25px;
+    padding: 10px 0;
+  }
+  .menu-horizontal a :hover,
+  .menu-horizontal a.selected {
+    color: #04162a;
+    text-decoration: underline;
+  }
+  .menu-horizontal a: :focus {
+    outline: 2px dashed #2f37d3;
+    outline-offset: 4px;
+  }
+  .menu-horizontal a::after {
+    content: none;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 30px;
+  }
+  .close-menu {
+    align-self: flex-end;
+    padding: 20px 15px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 30px;
+  }
+}
+
+/* Footer general */
+.footer {
+  background-color: #222; /* Fondo oscuro para contraste */
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Contenedor flexible para 3 columnas */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+/* Marca o logotipo */
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Enlaces legales */
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Redes sociales con íconos */
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social img {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.footer-social {
+}
